@@ -1,0 +1,40 @@
+{
+  "name": "landing-page-app",
+  "private": true,
+  "version": "0.0.0",
+  "main": "./out/main/main.js",
+  "scripts": {
+    "dev": "electron-vite dev -w",
+    "build": "cross-env NODE_ENV=production electron-vite build && electron-builder",
+    "preview": "electron-vite preview"
+  },
+  "dependencies": {
+    "@mantine/core": "^7.2.2",
+    "@mantine/hooks": "^7.2.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.20.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.15",
+    "@types/react-dom": "^18.2.7",
+    "@vitejs/plugin-react": "^4.0.3",
+    "cross-env": "^7.0.3",
+    "electron": "^27.0.4",
+    "electron-builder": "^24.6.4",
+    "electron-vite": "^1.0.28",
+    "eslint": "^8.45.0",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.3",
+    "postcss": "^8.4.31",
+    "postcss-preset-mantine": "^1.11.0",
+    "postcss-simple-vars": "^7.0.1",
+    "vite": "^4.4.5"
+  },
+  "build": {
+    "directories": {
+      "output": "dist"
+    }
+  }
+}
